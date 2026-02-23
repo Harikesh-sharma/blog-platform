@@ -21,7 +21,7 @@ export default async function BlogPage() {
             slug={post.slug}
             title={post.title}
             excerpt={post.excerpt}
-            date={post.date.toISOString()}
+            date={new Date(post.date).toISOString()}
             author={post.author}
             category={post.category}
             readTime={post.readTime}
