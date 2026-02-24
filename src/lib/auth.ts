@@ -57,15 +57,23 @@ export const authOptions: NextAuthOptions = {
     error: '/auth/error',
   },
   callbacks: {
-    async jwt({ token, user }) {
+    async jwt({ token, user, account }) {
       if (user) {
         token.id = user.id
+      }
+      if (account) {
+        token.accessToken = account.access_token
+        token.provider = account.provider
+        token.providerAccountId = account.providerAccountId
       }
       return token
     },
     async session({ session, token }) {
       if (session.user) {
         session.user.id = token.id as string
+      }
+      if (token.accessToken) {
+        (session as any).accessToken = token.accessToken as string
       }
       return session
     },
