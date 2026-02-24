@@ -39,7 +39,7 @@ export default async function HomePage() {
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="animate-fade-in text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
               Welcome to{" "}
-              <span className="text-primary">BlogHub</span>
+              <span className="text-primary">BlogWriter</span>
             </h1>
             <p className="mt-6 animate-fade-in delay-100 text-lg text-muted-foreground">
               Discover the latest insights, tutorials, and stories from our expert writers. 

@@ -23,7 +23,7 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center space-x-2">
-              <span className="text-xl font-bold text-primary">BlogHub</span>
+              <span className="text-xl font-bold text-primary">BlogWriter</span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground max-w-xs">
               A modern blog platform built with Next.js, TypeScript, and Tailwind CSS. 
@@ -92,7 +92,7 @@ export function Footer() {
         </div>
         <div className="mt-12 border-t pt-8">
           <p className="text-center text-sm text-muted-foreground">
-            © {new Date().getFullYear()} BlogHub. All rights reserved.
+            © {new Date().getFullYear()} BlogWriter. All rights reserved.
           </p>
         </div>
       </div>
