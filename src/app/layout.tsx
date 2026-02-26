@@ -12,17 +12,26 @@ export const metadata: Metadata = {
     default: "BlogWriter",
     template: "%s | BlogWriter",
   },
-  description: "A modern blog platform built with Next.js, TypeScript, and Tailwind CSS",
-  keywords: ["blog", "next.js", "typescript", "tailwindcss", "shadcn"],
+  description: "A modern blog platform built with Next.js, TypeScript, and Tailwind CSS. Discover the latest insights, tutorials, and stories from expert writers.",
+  keywords: ["blog", "next.js", "typescript", "tailwindcss", "shadcn", "writing", "tutorials", "tech"],
   authors: [{ name: "BlogWriter Team" }],
   creator: "BlogWriter",
+  metadataBase: new URL('https://blogwriter.com'),
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://blogwriter.com",
     title: "BlogWriter",
-    description: "A modern blog platform built with Next.js, TypeScript, and Tailwind CSS",
+    description: "A modern blog platform built with Next.js, TypeScript, and Tailwind CSS. Discover the latest insights, tutorials, and stories from expert writers.",
     siteName: "BlogWriter",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "BlogWriter - Modern Blog Platform",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -32,6 +41,13 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 }
 
